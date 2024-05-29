@@ -95,7 +95,7 @@ namespace MyFirstProyectWithLineCommand.Controllers
         {
             StundetModel Alumno=new StundetModel();  
            Alumno.Id=new Guid();
-            Alumno.Nombre="Carrera cargada";
+            Alumno.Nombre="Alumno cargado";
             return View(Alumno);
         }
 
@@ -105,7 +105,7 @@ namespace MyFirstProyectWithLineCommand.Controllers
               if(!ModelState.IsValid)
            {
             _logger.LogWarning("El objeto no es valido");
-            estudiante.Nombre="Carrera no es valida";
+            estudiante.Nombre="Alumno no valido";
             return View(estudiante);
            }
 
