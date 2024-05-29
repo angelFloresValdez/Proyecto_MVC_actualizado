@@ -11,15 +11,30 @@ namespace MyFirstProyectWithLineCommand.Controllers
     public class ProfesController : Controller
     
     {
+         private readonly ILogger<ProfesController> _logger;
+        public ProfesController(ILogger<ProfesController> logger)
+        {
+             _logger = logger;
+        }
       
-    public  ProfesController()
-    {
-        
-        
-    }
+
        public IActionResult ProfesAdd()
         {
             return View();  
+        }  
+
+         [HttpPost]
+         public IActionResult ProfesAdd(ProfeModel profes)
+        {
+           if(!ModelState.IsValid)
+           {
+            _logger.LogWarning("El objeto no es valido");
+            return View();
+           }
+
+            _logger.LogInformation("El objeto es valido");
+         
+            return Redirect("ListaProfesores");
         }  
 
            public IActionResult ListaProfesores()
@@ -81,14 +96,36 @@ namespace MyFirstProyectWithLineCommand.Controllers
             return View(profe);  
         }
 
-        public IActionResult ProfesEdit()
+        public IActionResult ProfesEdit(Guid Id)
         {
-            /*
-                Editar info de profes
-            */
-
-            return Redirect("ListaProfesores");
+             ProfeModel Docente=new ProfeModel();  
+           Docente.Id=new Guid();
+            Docente.Nombre="profe agregado";
+            return View(Docente);
         }
+
+
+             [HttpPost]
+                 public IActionResult ProfesEdit(ProfeModel maestro)
+        {
+             if(!ModelState.IsValid)
+           {
+            _logger.LogWarning("El objeto no es valido");
+            maestro.Nombre="Maestro no es valido";
+            return View(maestro);
+           }
+
+            _logger.LogInformation("El objeto es valido");
+         
+            return Redirect("DegreeList");
+           
+
+           
+        }
+
+
+
+
         public IActionResult ProfeShowToDelete(Guid Id)
         {
 

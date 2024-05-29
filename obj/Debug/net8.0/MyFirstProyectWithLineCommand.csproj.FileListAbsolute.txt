@@ -58,3 +58,4 @@ C:\Users\Angel Flores\Desktop\Generalidades\MyFirstProyectWithLineCommand\obj\De
 C:\Users\Angel Flores\Desktop\Generalidades\MyFirstProyectWithLineCommand\obj\Debug\net8.0\MyFirstProyectWithLineCommand.pdb
 C:\Users\Angel Flores\Desktop\Generalidades\MyFirstProyectWithLineCommand\obj\Debug\net8.0\MyFirstProyectWithLineCommand.genruntimeconfig.cache
 C:\Users\Angel Flores\Desktop\Generalidades\MyFirstProyectWithLineCommand\obj\Debug\net8.0\ref\MyFirstProyectWithLineCommand.dll
+C:\Users\Angel Flores\Desktop\Generalidades\MyFirstProyectWithLineCommand\obj\Debug\net8.0\MyFirstProyectWithLineCommand.sourcelink.json

@@ -22,8 +22,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xBbHVtbm9zQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Alumnos/AlumnosShowAndEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xBbHVtbm9zU2hvd0FuZEVkaXQuY3NodG1s
+[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Alumnos/AlumnosEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xBbHVtbm9zRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Alumnos/AlumnosShowToDelete.cshtml]
@@ -58,20 +58,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/profes/ListaProfesores.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccHJvZmVzXExpc3RhUHJvZmVzb3Jlcy5jc2h0bWw=
+[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Profes/ListaProfesores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzXExpc3RhUHJvZmVzb3Jlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/profes/ProfesAdd.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccHJvZmVzXFByb2Zlc0FkZC5jc2h0bWw=
+[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Profes/ProfesAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzXFByb2Zlc0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/profes/ProfeShowAndEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccHJvZmVzXFByb2ZlU2hvd0FuZEVkaXQuY3NodG1s
+[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Profes/ProfesEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzXFByb2Zlc0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/profes/ProfeShowToDelete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccHJvZmVzXFByb2ZlU2hvd1RvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Profes/ProfeShowToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzXFByb2ZlU2hvd1RvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Angel Flores/Desktop/Generalidades/MyFirstProyectWithLineCommand/Views/Shared/Error.cshtml]

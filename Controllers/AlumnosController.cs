@@ -9,14 +9,31 @@ namespace MyFirstProyectWithLineCommand.Controllers
 {
     public class AlumnosController : Controller
     {
-        public AlumnosController()
+          private readonly ILogger<AlumnosController> _logger;
+        public AlumnosController(ILogger<AlumnosController> logger)
         {
+             _logger = logger;
         }
 
+       
         public IActionResult AlumnosAdd()
         {
             return View();
         }
+
+        [HttpPost]
+         public IActionResult AlumnosAdd(StundetModel alumno)
+        {
+           if(!ModelState.IsValid)
+           {
+            _logger.LogWarning("El objeto no es valido");
+            return View();
+           }
+
+            _logger.LogInformation("El objeto es valido");
+         
+            return Redirect("studentList");
+        }   
 
         public IActionResult StudentList()
         {
@@ -74,11 +91,29 @@ namespace MyFirstProyectWithLineCommand.Controllers
             return View(alumno);
         }
 
-        public IActionResult AlumnosEdit()
+        public IActionResult AlumnosEdit(Guid Id)
         {
-            // Editar info
+            StundetModel Alumno=new StundetModel();  
+           Alumno.Id=new Guid();
+            Alumno.Nombre="Carrera cargada";
+            return View(Alumno);
+        }
+
+         [HttpPost]
+         public IActionResult AlumnosEdit(StundetModel estudiante)
+        {
+              if(!ModelState.IsValid)
+           {
+            _logger.LogWarning("El objeto no es valido");
+            estudiante.Nombre="Carrera no es valida";
+            return View(estudiante);
+           }
+
+            _logger.LogInformation("El objeto es valido");
+         
             return Redirect("StudentList");
         }
+
 
         public IActionResult AlumnosShowToDelete(Guid Id)
         {
