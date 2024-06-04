@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyFirstProyectWithLineCommand")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f94943dbada26ca36aa86f836db9ee33f4638ada")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cee7098e6d9e5b70ee81ad685576802f50701528")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyFirstProyectWithLineCommand")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyFirstProyectWithLineCommand")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

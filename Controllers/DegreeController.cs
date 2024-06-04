@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyFirstProyectWithLineCommand.Entities;
 using MyFirstProyectWithLineCommand.Models;
 
 namespace MyFirstProyectWithLineCommand.Controllers
@@ -10,9 +11,11 @@ namespace MyFirstProyectWithLineCommand.Controllers
     public class DegreeController : Controller
     {
          private readonly ILogger<DegreeController> _logger;
-        public DegreeController(ILogger<DegreeController> logger)
+         private readonly ApplicactionDbContext _context;
+        public DegreeController(ApplicactionDbContext context, ILogger<DegreeController> logger)
         {
              _logger = logger;
+             _context= context;
         }
 
         public IActionResult DegreeAdd()
@@ -26,11 +29,19 @@ namespace MyFirstProyectWithLineCommand.Controllers
         {
            if(!ModelState.IsValid)
            {
-            _logger.LogWarning("El objeto no es valido");
+            _logger.LogWarning("degree.Nombre");
+            _logger.LogWarning("El modelo no es valido");
             return View();
            }
 
             _logger.LogInformation("El objeto es valido");
+            Degree degreeBD= new Degree();
+            degreeBD.Id=new Guid();
+            degreeBD.Name=degree.Nombre;
+            degreeBD.CreationDate=DateTime.Today;
+
+            _context.Degrees.Add(degreeBD);
+            _context.SaveChanges();
          
             return Redirect("DegreeList");
         }   
